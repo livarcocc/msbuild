@@ -62,6 +62,8 @@
     <PackageIconUrl>https://go.microsoft.com/fwlink/?linkid=825694</PackageIconUrl>
 
     <DevDivPackagesDir>$(VisualStudioSetupOutputPath)DevDivPackages\</DevDivPackagesDir>
+
+    <CodeAnalysisRuleSet>/Users/livarcocc/Documents/git/msbuild/src/AllRulesDisabled.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(TargetFramework.StartsWith('net4'))">
@@ -74,4 +76,8 @@
     <!-- When targeting .NET Core, Exe and unit tests projects always use AnyCPU architecture -->
     <RuntimeOutputPlatformTarget>AnyCPU</RuntimeOutputPlatformTarget>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.netcore.analyzers" />
+  </ItemGroup>
 </Project>

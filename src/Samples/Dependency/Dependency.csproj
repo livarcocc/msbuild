@@ -8,4 +8,7 @@
   <PropertyGroup Condition="'$(NetCoreBuild)' == 'true'">
     <StartAction Condition="'$(StartAction)'==''">Program</StartAction>
   </PropertyGroup>
+  <ItemGroup>
+  	<PackageReference Update="microsoft.netcore.analyzers" Version="2.6.3" />
+  </ItemGroup>
 </Project>

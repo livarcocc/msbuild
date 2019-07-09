@@ -8,7 +8,13 @@
     <EnableCentralPackageVersions>false</EnableCentralPackageVersions>
 
     <IsShipping>false</IsShipping>
+
+    <CodeAnalysisRuleSet>/Users/livarcocc/Documents/git/msbuild/src/AllRulesDisabled.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.netcore.analyzers" />
+  </ItemGroup>
 
   <!-- Import parent props -->
   <Import Project="..\Directory.Build.props"/>

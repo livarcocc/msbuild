@@ -47,6 +47,8 @@
     <PackageReference Update="xunit.assert" Version="$(XUnitVersion)" />
     <PackageReference Update="xunit.console" Version="$(XUnitVersion)" />
     <PackageReference Update="xunit.core" Version="$(XUnitVersion)" />
+
+    <PackageReference Update="microsoft.netcore.analyzers" Version="2.6.3" />
   </ItemGroup>
 
   <ItemGroup>

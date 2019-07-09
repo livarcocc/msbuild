@@ -15,5 +15,6 @@
     <ProjectReference Include="..\..\Framework\Microsoft.Build.Framework.csproj" />
     <ProjectReference Include="..\..\Utilities\Microsoft.Build.Utilities.csproj" />
     <ProjectReference Include="..\Dependency\Dependency.csproj" />
+    <PackageReference Update="microsoft.netcore.analyzers" Version="2.6.3" />
   </ItemGroup>
 </Project>
